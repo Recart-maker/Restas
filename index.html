@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo a Restar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>¡Aprende a Restar! 🧮</h1>
+        
+        <!-- Estructura de ingreso -->
+        <div class="estructura-resta">
+            <div class="campo-numero">
+                <input type="number" id="minuendo" placeholder="Minuendo, el número de arriba">
+            </div>
+            
+            <div class="operacion">
+                <span>-</span>
+                <input type="number" id="sustraendo" placeholder="Sustraendo, el número de abajo">
+            </div>
+
+            <div class="botones">
+                <button onclick="iniciarResta()">Resolver</button>
+                <button onclick="reiniciar()">Reiniciar</button>
+            </div>
+        </div>
+
+        <!-- Resultados -->
+        <div id="proceso"></div>
+        <div id="resultado"></div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
